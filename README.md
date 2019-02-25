@@ -31,6 +31,6 @@ https://github.com/udacity/deep-reinforcement-learning#dependencies
 
 `Navigation2.ipynb` has the code to start the unity environment and then train the agent. 
 dqn_agent2.py has the agent training methods. The training based on DQN algorithm with experience replay buffer.
-the file model.py is the neural network representing the state space 
+the file model.py is the neural network representing the Q function 
 
 
