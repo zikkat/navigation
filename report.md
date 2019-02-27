@@ -14,7 +14,10 @@ The algorithm does not use pixels but rather velocity, along with ray-based perc
 There are three main modules:
 
 1- model.py is the neural network representing the Q function
-
+The network is a fully connected network with three layers
+  * First layer is input layer: uses state size=37 and outputs: 128
+  * Second layer has input: 128 and output: 64
+  * Third and Last Layer has input 64 and output: action size=4
 
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
