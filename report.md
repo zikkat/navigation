@@ -2,6 +2,9 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
+[image2]: images/Training_results.png "results"
+
+[image3]: images/score.png "scores"
 # Report
 
 ### Method
@@ -26,6 +29,10 @@ The network is a fully connected network with three layers
 
 Training results were as follows:
 
+![scores][image3]
+
+
+![results][image2]
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
 - **`0`** - move forward.
@@ -35,15 +42,8 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
+### Potential Improvements:
 
-follow the steps in the link below to have an environment ready
-
-https://github.com/udacity/deep-reinforcement-learning#dependencies
-
-
-### Instructions
-
-`Navigation2.ipynb` has the code to start the unity environment and then train the agent. 
-dqn_agent2.py has the agent training methods. The training based on DQN algorithm with experience replay buffer.
-the file model.py is the neural network representing the Q function 
+* Use Double DQN 
+* Prioritized Replay buffer
+* Dueling DQN
