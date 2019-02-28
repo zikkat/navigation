@@ -18,9 +18,14 @@ The network is a fully connected network with three layers
   * First layer is input layer: uses state size=37 and outputs: 128
   * Second layer has input: 128 and output: 64
   * Third and Last Layer has input 64 and output: action size=4
+  
+2- dqn_agent2.py defines how the agent interacts with the environment and sets up the loss function for learning
+
+3- Navigation2.ipynb has the code to start the unity environment and then train the agent, it binds all together. 
 
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+Training results were as follows:
+
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
 - **`0`** - move forward.
