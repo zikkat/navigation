@@ -44,6 +44,6 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Potential Improvements:
 
-* Use Double DQN 
+* Use Double DQN. While this is a method that is supposed to improve the learning. My first attempt at this didn't show improvement in learning. 
 * Prioritized Replay buffer
 * Dueling DQN
