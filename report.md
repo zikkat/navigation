@@ -18,7 +18,7 @@ There are three main modules:
 
 1- model.py is the neural network representing the Q function
 The network is a fully connected network with three layers
-  * First layer is input layer: uses state size=37 and outputs: 128
+  * First layer is input layer: uses state size=37 and outputs: 128. Initially I attempted using 64 nodes, similar to the udacity example, but found that by double the number of neurons, I was able to increase the capacity of the network and therefore better learn the Q function. 
   * Second layer has input: 128 and output: 64
   * Third and Last Layer has input 64 and output: action size=4
   
